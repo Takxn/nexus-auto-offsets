@@ -144,18 +144,9 @@ Der Treiber wird benötigt, um **live** aus dem Rust-Prozess zu lesen (Offset-Te
 
 ### 4.2 Treiber laden (als Administrator)
 
-1. **Eingabeaufforderung** oder **PowerShell als Administrator** öffnen.
-2. In den Ordner wechseln, in dem **NullkD.sys** liegt.
-3. Treiber laden, z.B.:
-
-   ```bat
-   sc create NullkD type= kernel binPath= "C:\Pfad\zu\NullkD.sys"
-   sc start NullkD
-   ```
-
-   (Oder dein übliches Verfahren zum Laden des Treibers.)
-
-4. Prüfen: **Treiber läuft** (z.B. in den Diensten oder mit deinem Loader).
+1. **DigiMapper.exe** als **Administrator** starten (Rechtsklick → „Als Administrator ausführen“).
+2. In DigiMapper den Treiber **NullkD.sys** auswählen und laden.
+3. Prüfen: DigiMapper zeigt an, ob der Treiber erfolgreich geladen wurde.
 
 **Wichtig:** Treiber nur auf eigenes Risiko und in Übereinstimmung mit den Nutzungsbedingungen von Rust/EAC nutzen.
 
