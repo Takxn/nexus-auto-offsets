@@ -1,11 +1,3 @@
-<div align="center">
-
-<br>
-
-<img src="logo.png" width="160" alt="Nexus+">
-
-<br><br>
-
 # NEXUS+ AUTO-OFFSET GENERATOR v3.1
 
 Vollautomatische Offsets.h-Generierung für Rust (IL2CPP) + integrierter Offset-Tester.  
@@ -77,11 +69,18 @@ Im Output-Ordner liegen u.a.:
 
 ### 2.2 NEXUS+ Plugin in IDA einbinden (einmalig)
 
-1. Öffne den Ordner **IDA 9.3 Pro** (deine IDA-Installation).
-2. Gehe in den Unterordner **plugins**.
-3. Kopiere **NEXUS+_AUTO-OFFSET_GENERATOR_v3.1.py** in diesen **plugins**-Ordner.
-4. IDA neu starten.
-5. Prüfen: **Edit** → **Plugins** → Eintrag **„NEXUS+ Offset Generator“** sollte sichtbar sein.
+1. Öffne den Ordner deiner **IDA Pro**-Installation (z.B. `C:\Program Files\IDA Pro 9.3\` oder `...\IDA 9.3 Pro\`).
+2. Gehe in den Unterordner **`plugins`**.
+3. Kopiere **NEXUS+_AUTO-OFFSET_GENERATOR_v3.1.py** aus diesem Repository in genau diesen Ordner.
+
+   **Zielpfad (Beispiel):**
+   ```
+   <IDA-Installation>\plugins\NEXUS+_AUTO-OFFSET_GENERATOR_v3.1.py
+   ```
+   z.B. `C:\Program Files\IDA Pro 9.3\plugins\NEXUS+_AUTO-OFFSET_GENERATOR_v3.1.py`
+
+4. IDA **neu starten** (komplett beenden und wieder öffnen).
+5. Prüfen: **Edit** → **Plugins** → Eintrag **„NEXUS+ Offset Generator“** sollte erscheinen.
 
 ---
 
@@ -155,6 +154,8 @@ Der Treiber wird benötigt, um **live** aus dem Rust-Prozess zu lesen (Offset-Te
 1. **DigiMapper.exe** als **Administrator** starten (Rechtsklick → „Als Administrator ausführen“).
 2. In DigiMapper den Treiber **NullkD.sys** auswählen und laden.
 3. Prüfen: DigiMapper zeigt an, ob der Treiber erfolgreich geladen wurde.
+
+**Hinweis Antivirus/Windows:** **DigiMapper.exe** und **NullkD.sys** können von Antivirenprogrammen oder Windows Defender als verdächtig erkannt und blockiert bzw. gelöscht werden (False Positive). In dem Fall: Ausnahme/Whitelist für den Ordner anlegen oder temporär deaktivieren – nur auf eigenes Risiko.
 
 **Wichtig:** Treiber nur auf eigenes Risiko und in Übereinstimmung mit den Nutzungsbedingungen von Rust/EAC nutzen.
 
@@ -241,6 +242,7 @@ NEXUS+ AUTO-OFFSET GENERATOR v3.1\
 | Alles Fallback ([-]) | ida_py3.py in IDA ausgeführt? Dann sind Namen da; Plugin erneut ausführen. |
 | Tester: „Treiber: ✗“ | NullKD-Treiber laden (Schritt 4), danach „Neu verbinden“. |
 | Tester: „Rust nicht gefunden“ | Rust (RustClient.exe) starten, dann „Neu verbinden“. |
+| DigiMapper/NullkD wird blockiert oder gelöscht | Antivirus/Windows erkennt Treiber-Loader oft als False Positive. Ausnahme für den Ordner anlegen oder Datei als vertrauenswürdig markieren. |
 
 ---
 

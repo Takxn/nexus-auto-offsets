@@ -1,0 +1,910 @@
+namespace Offsets {
+    // ============================ Static =============================
+    namespace Static {
+        constexpr size_t PaintingFavouriteColorButtonTypeInfo = 0x0;
+        constexpr size_t PlayerWalkMovement = 0x3974010;
+        constexpr size_t AdminConvar = 0xD793A18;
+        constexpr size_t ConvarGraphicsTypeInfo = 0xD793B80;
+        constexpr size_t MainCamera = 0xD7E7AF0;
+        constexpr size_t Input = 0xD7EA518;
+        constexpr size_t Il2cppHandle = 0xDAD33E0;
+
+        constexpr size_t STypeInfo0 = 0xD750200;
+        constexpr size_t STypeInfo1 = 0xD755460;
+        constexpr size_t STypeInfo2 = 0xD75B388;
+        constexpr size_t STypeInfo3 = 0xD7B6498;
+        constexpr size_t STypeInfo4 = 0xD7F41F0;
+        constexpr size_t StringPool = 0xD775728;
+        constexpr size_t BaseViewModel = 0xD755460;
+        constexpr size_t GameManager = 0xD7CFB88;
+    }
+
+    // ========================= AdminConvar ===========================
+    namespace AdminConvar {
+        constexpr size_t AdminAmbientMultiplier = 0x14;
+        constexpr size_t UnderwaterEffect = 0x18;
+        constexpr size_t AllowAdminUI = 0x34;
+        constexpr size_t AdminLight = 0x44;
+        constexpr size_t DdrawNetupdate = 0x98;
+        constexpr size_t UnderwaterCinematic = 0x99;
+        constexpr size_t UnderwaterScatter = 0xB0;
+        constexpr size_t AdminTime = 0xB8;
+        constexpr size_t OverrideOceanEnvironmentLerp = 0xBC;
+        constexpr size_t WoundedFreecam = 0xC9;
+        constexpr size_t AdminReflection = 0x160;
+    }
+
+    // ======================= AnimationEvents =========================
+    namespace AnimationEvents {
+        constexpr size_t targetEntity = 0x28;
+    }
+
+    // ======================= BaseCombatEntity ========================
+    namespace BaseCombatEntity {
+        constexpr size_t StartHealth = 0x1F0;
+        constexpr size_t LifeState = 0x258;
+    }
+
+    // ========================== BaseEntity ===========================
+    namespace BaseEntity {
+        constexpr size_t Model = 0xE8;
+    }
+
+    // ========================== BaseMelee ============================
+    namespace BaseMelee {
+        constexpr size_t DamageProperties = 0x300;
+        constexpr size_t DamageTypes = 0x308;
+        constexpr size_t DeployableDamageOverrides = 0x310;
+        constexpr size_t MaxDistance = 0x318;
+        constexpr size_t AttackRadius = 0x31C;
+        constexpr size_t IsAutomatic = 0x320;
+        constexpr size_t BlockSprintOnAttack = 0x321;
+        constexpr size_t CanUntieCrates = 0x322;
+        constexpr size_t LongResourceForgiveness = 0x323;
+        constexpr size_t StrikeFX = 0x328;
+        constexpr size_t UseStandardHitEffects = 0x330;
+        constexpr size_t AiStrikeDelay = 0x334;
+        constexpr size_t SwingEffect = 0x338;
+        constexpr size_t MaterialStrikeFX = 0x340;
+        constexpr size_t HeartStress = 0x348;
+        constexpr size_t Gathering = 0x350;
+        constexpr size_t ThrowReady = 0x358;
+        constexpr size_t CanThrowAsProjectile = 0x359;
+        constexpr size_t CanThrowAsEntity = 0x35A;
+        constexpr size_t CanAiHearIt = 0x35B;
+        constexpr size_t CanScareAiWhenAimed = 0x35C;
+        constexpr size_t OnlyThrowAsProjectile = 0x35D;
+        constexpr size_t ThrowFullStack = 0x35E;
+    }
+
+    // ========================= BaseMovement ==========================
+
+    // ======================= BaseNetworkable =========================
+    namespace BaseNetworkable {
+        constexpr size_t Children = 0x28;
+        constexpr size_t PrefabID = 0x30;
+    }
+
+    // ========================== BasePlayer ===========================
+    namespace BasePlayer {
+        constexpr size_t PlayerEyes = 0x2B0;
+        constexpr size_t PlayerInput = 0x338;
+        constexpr size_t DisplayName = 0x3E8;
+        constexpr size_t CurrentTeam = 0x4A0;
+        constexpr size_t ActiveItem = 0x4D0;
+        constexpr size_t Movement = 0x4E0;
+        constexpr size_t PlayerInventory = 0x4E8;
+        constexpr size_t PlayerModel = 0x4F8;
+        constexpr size_t ActiveItemDecryption = 0xDD4C0;
+    }
+
+    // ======================== BaseProjectile =========================
+    namespace BaseProjectile {
+        constexpr size_t ProjectileVelocityScale = 0x30C;
+        constexpr size_t Automatic = 0x310;
+        constexpr size_t MuzzlePoint = 0x348;
+        constexpr size_t PrimaryMagazine = 0x358;
+        constexpr size_t Recoil = 0x380;
+        constexpr size_t IsBurstWeapon = 0x3B7;
+
+        namespace Magazine {
+            constexpr size_t Definition = 0x10;
+            constexpr size_t Capacity = 0x18;
+            constexpr size_t Contents = 0x1C;
+            constexpr size_t AmmoType = 0x20;
+            constexpr size_t AllowPlayerReloading = 0x28;
+            constexpr size_t AllowAmmoSwitching = 0x29;
+
+            namespace Definition {
+                constexpr size_t BuiltInSize = 0x0;
+                constexpr size_t AmmoTypes = 0x4;
+            }
+        }
+    }
+
+    // ======================== BaseViewModel ==========================
+    namespace BaseViewModel {
+        constexpr size_t baseSkinPieces = 0x68;
+        constexpr size_t ViewmodelSway = 0x80;
+        constexpr size_t ViewmodelCameraAnimation = 0x88;
+        constexpr size_t ViewmodelPunch = 0x90;
+        constexpr size_t IronSights = 0x98;
+        constexpr size_t Animator = 0xA0;
+        constexpr size_t ViewmodelAspectOffset = 0xC0;
+        constexpr size_t AnimationEvents = 0xC8;
+        constexpr size_t ViewmodelBob = 0xE0;
+        constexpr size_t ViewmodelLower = 0xE8;
+        constexpr size_t ListStart = 0x118;
+    }
+
+    // ========================== BowWeapon ============================
+    namespace BowWeapon {
+        constexpr size_t AttackReady = 0x438;
+        constexpr size_t ArrowBack = 0x43C;
+        constexpr size_t SwapArrows = 0x440;
+        constexpr size_t WasAiming = 0x448;
+    }
+
+    // ====================== CompoundBowWeapon ========================
+    namespace CompoundBowWeapon {
+        constexpr size_t StringHoldDurationMax = 0x450;
+        constexpr size_t StringBonusDamage = 0x454;
+        constexpr size_t StringBonusDistance = 0x458;
+        constexpr size_t StringBonusVelocity = 0x45C;
+        constexpr size_t MovementPenaltyRampUpTime = 0x460;
+        constexpr size_t ConditionLossPerSecondHeld = 0x464;
+        constexpr size_t ConditionLossHeldDelay = 0x468;
+        constexpr size_t ChargeUpSoundDef = 0x470;
+        constexpr size_t StringHeldSoundDef = 0x478;
+        constexpr size_t DrawFinishSoundDef = 0x480;
+        constexpr size_t private_Sound_0 = 0x488;
+        constexpr size_t private_Sound_1 = 0x490;
+        constexpr size_t MovementPenalty = 0x498;
+        constexpr size_t private_float_0 = 0x49C;
+        constexpr size_t private_float_1 = 0x4A0;
+        constexpr size_t internal_float_2 = 0x4A4;
+        constexpr size_t private_bool_0 = 0x4A8;
+    }
+
+    // ========================= Construction ==========================
+    namespace Construction {
+        constexpr size_t holdToPlaceDuration = 0x100;
+    }
+
+    // ======================== ConvarGraphics =========================
+    namespace ConvarGraphics {
+        constexpr size_t FOV = 0x130;
+    }
+
+    // ====================== FlintStrikeWeapon ========================
+    namespace FlintStrikeWeapon {
+        constexpr size_t SuccessFraction = 0x438;
+        constexpr size_t SuccessIncrease = 0x43C;
+        constexpr size_t StrikeRecoil = 0x440;
+        constexpr size_t DidSparkThisFrame = 0x448;
+        constexpr size_t IsStriking = 0x449;
+        constexpr size_t Strikes = 0x44C;
+        constexpr size_t LastSpectatorAttack = 0x450;
+    }
+
+    // ========================= GameManager ===========================
+    namespace GameManager {
+        constexpr size_t ClientInstance = 0x20;
+        constexpr size_t PrefabPoolCollection = 0x20;
+
+        namespace PrefabPool {
+            constexpr size_t Stack = 0x18;
+
+            namespace PoolManager {
+                constexpr size_t Storage = 0x10;
+            }
+        }
+    }
+
+    // ============================ Input ==============================
+    namespace Input {
+        constexpr size_t ButtonList = 0x128;
+    }
+
+    // ========================= InputButtons ==========================
+    namespace InputButtons {
+        constexpr size_t CurrentValue = 0x10;
+        constexpr size_t CycleIndex = 0x14;
+        constexpr size_t Code = 0x18;
+        constexpr size_t Binds = 0x20;
+        constexpr size_t LastValue = 0x28;
+        constexpr size_t Transient = 0x29;
+        constexpr size_t TestFunction = 0x30;
+        constexpr size_t Name = 0x38;
+        constexpr size_t Cycle = 0x40;
+    }
+
+    // ============================= Item ==============================
+    namespace Item {
+        constexpr size_t Contents = 0x18;
+        constexpr size_t Info = 0x30;
+        constexpr size_t MaxCondition = 0x38;
+        constexpr size_t Uid = 0x70;
+        constexpr size_t Position = 0xA0;
+        constexpr size_t HeldEntity = 0xB0;
+        constexpr size_t Amount = 0xC8;
+        constexpr size_t Condition = 0xE0;
+    }
+
+    // ======================== ItemContainer ==========================
+    namespace ItemContainer {
+        constexpr size_t uid = 0x20;
+        constexpr size_t Capacity = 0x38;
+        constexpr size_t Flags = 0x3C;
+        constexpr size_t PlayerOwner = 0x40;
+        constexpr size_t EntityOwner = 0x50;
+        constexpr size_t ItemList = 0x68;
+    }
+
+    // ======================== ItemDefinition =========================
+    namespace ItemDefinition {
+        constexpr size_t ItemId = 0x20;
+        constexpr size_t ShortName = 0x28;
+        constexpr size_t DisplayName = 0x40;
+        constexpr size_t DisplayDescription = 0x48;
+        constexpr size_t Category = 0x58;
+        constexpr size_t Stackable = 0x78;
+        constexpr size_t Rarity = 0x90;
+        constexpr size_t Condition = 0xB8;
+        constexpr size_t Parent = 0x100;
+        constexpr size_t Traits = 0x150;
+        constexpr size_t Children = 0x158;
+        constexpr size_t Blueprint = 0x178;
+    }
+
+    // ====================== ItemModProjectile ========================
+    namespace ItemModProjectile {
+        constexpr size_t ProjectileObject = 0x20;
+        constexpr size_t Mods = 0x28;
+        constexpr size_t AmmoType = 0x30;
+        constexpr size_t NumProjectiles = 0x38;
+        constexpr size_t ProjectileSpread = 0x3C;
+        constexpr size_t ProjectileVelocity = 0x40;
+        constexpr size_t ProjectileVelocitySpread = 0x44;
+        constexpr size_t UseCurve = 0x48;
+        constexpr size_t SpreadScalar = 0x50;
+        constexpr size_t AttackEffectOverride = 0x58;
+        constexpr size_t BarrelConditionLoss = 0x60;
+        constexpr size_t Category = 0x68;
+    }
+
+    // ======================== LootableCorpse =========================
+    namespace LootableCorpse {
+        constexpr size_t PlayerName = 0x2C8;
+        constexpr size_t LootPanelName = 0x2D0;
+        constexpr size_t PlayerSteamID = 0x2D8;
+    }
+
+    // ========================== MainCamera ===========================
+    namespace MainCamera {
+        constexpr size_t Camera = 0x60;
+        constexpr size_t Matrix = 0x30C;
+        constexpr size_t Position = 0x454;
+    }
+
+    // ===================== MeshPaintController =======================
+    namespace MeshPaintController {
+        constexpr size_t CurrentCanvas = 0xD0;
+        constexpr size_t LastCanvas = 0xD8;
+    }
+
+    // ============================ Model ==============================
+    namespace Model {
+        constexpr size_t BoneTransforms = 0x50;
+    }
+
+    // ========================== ModelState ===========================
+    namespace ModelState {
+        constexpr size_t Flags = 0x2C;
+        constexpr size_t BasePlayerModelState = 0x350;
+    }
+
+    // ======================== Network_Client =========================
+    namespace Network_Client {
+        constexpr size_t ConnectedAddress = 0x10;
+        constexpr size_t ServerName = 0x18;
+        constexpr size_t ConnectedPort = 0x58;
+    }
+
+    // ========================= Network_Net ===========================
+    namespace Network_Net {
+        constexpr size_t cl = 0x18;
+    }
+
+    // ================= PaintingFavouriteColorButton ==================
+    namespace PaintingFavouriteColorButton {
+        constexpr size_t meshPaintController = 0x20;
+    }
+
+    // ========================= PlayerInput ===========================
+    namespace PlayerInput {
+        constexpr size_t State = 0x28;
+        constexpr size_t BodyAngles = 0x44;
+        constexpr size_t RecoilAngles = 0x80;
+    }
+
+    // ======================= PlayerInventory =========================
+    namespace PlayerInventory {
+        constexpr size_t ReturnItems = 0x28;
+        constexpr size_t ContainerSlot1 = 0x30;
+        constexpr size_t ReturnItems = 0x38;
+        constexpr size_t Crafting = 0x40;
+        constexpr size_t Loot = 0x48;
+        constexpr size_t ContainerSlot2 = 0x58;
+        constexpr size_t ContainerSlot3 = 0x60;
+    }
+
+    // ========================= PlayerModel ===========================
+    namespace PlayerModel {
+        constexpr size_t SkinnedMultiMesh = 0x1F0;
+        constexpr size_t Position = 0x1F8;
+        constexpr size_t Velocity = 0x21C;
+    }
+
+    // ====================== PlayerWalkMovement =======================
+    namespace PlayerWalkMovement {
+        constexpr size_t CapsuleHeight = 0x2;
+        constexpr size_t GroundAngle = 0x8;
+        constexpr size_t GravityTestRadius = 0x10;
+        constexpr size_t GroundNormalNew = 0x18;
+        constexpr size_t GroundVelocity = 0x20;
+        constexpr size_t MaxVelocity = 0x30;
+        constexpr size_t CapsuleCenterCrawling = 0x38;
+        constexpr size_t GroundTime = 0x40;
+        constexpr size_t JumpTime = 0x48;
+        constexpr size_t PreviousPosition = 0x50;
+        constexpr size_t PreviousVelocity = 0x58;
+        constexpr size_t GroundNormal = 0x60;
+        constexpr size_t GroundVelocityNew = 0x68;
+        constexpr size_t LastSprintTime = 0x70;
+        constexpr size_t SprintForced = 0x78;
+        constexpr size_t Grounded = 0x80;
+        constexpr size_t Climbing = 0x88;
+        constexpr size_t Swimming = 0x90;
+        constexpr size_t WasSwimming = 0x98;
+        constexpr size_t CapsuleCenter = 0xB8;
+        constexpr size_t CapsuleHeightDucked = 0xC0;
+        constexpr size_t CapsuleCenterDucked = 0xC8;
+        constexpr size_t CapsuleHeightCrawling = 0xD0;
+        constexpr size_t GravityMultiplierSwimming = 0xD8;
+        constexpr size_t GravityMultiplier = 0xF0;
+        constexpr size_t MaxAngleWalking = 0xF8;
+        constexpr size_t MaxAngleClimbing = 0x100;
+        constexpr size_t MaxAngleSliding = 0x108;
+        constexpr size_t MaxStepHeight = 0x110;
+        constexpr size_t Body = 0x118;
+        constexpr size_t Capsule = 0x120;
+        constexpr size_t GroundAngleNew = 0x128;
+        constexpr size_t LandTime = 0x138;
+        constexpr size_t PreviousInheritedVelocity = 0x148;
+        constexpr size_t NextSprintTime = 0x158;
+        constexpr size_t AttemptedMountTime = 0x168;
+        constexpr size_t Sliding = 0x178;
+        constexpr size_t Jumping = 0x188;
+        constexpr size_t WasJumping = 0x198;
+        constexpr size_t Falling = 0x1A0;
+        constexpr size_t WasFalling = 0x1A8;
+        constexpr size_t Flying = 0x1B0;
+        constexpr size_t WasFlying = 0x1BC;
+        constexpr size_t ForcedDuckDelta = 0x1C4;
+        constexpr size_t AdminSpeed = 0x1CC;
+    }
+
+    // ========================== Projectile ===========================
+    namespace Projectile {
+        constexpr size_t InitialVelocity = 0x28;
+        constexpr size_t Drag = 0x34;
+        constexpr size_t GravityModifier = 0x38;
+        constexpr size_t Thickness = 0x3C;
+        constexpr size_t ChangeInitialOrientation = 0x40;
+        constexpr size_t InitialDistance = 0x44;
+        constexpr size_t InitialOrientation = 0x48;
+        constexpr size_t PenetrationPower = 0x68;
+    }
+
+    // ======================= RecoilProperties ========================
+    namespace RecoilProperties {
+        constexpr size_t RecoilYawMin = 0x18;
+        constexpr size_t RecoilYawMax = 0x1C;
+        constexpr size_t RecoilPitchMin = 0x20;
+        constexpr size_t RecoilPitchMax = 0x24;
+        constexpr size_t MovementPenalty = 0x34;
+    }
+
+    // ======================= SkinnedMultiMesh ========================
+    namespace SkinnedMultiMesh {
+        constexpr size_t RendererList = 0x50;
+    }
+
+    // ========================== StringPool ===========================
+    namespace StringPool {
+        constexpr size_t ToString = 0x50;
+        constexpr size_t ToNumber = 0x58;
+    }
+
+    // =========================== TOD_Sky =============================
+    namespace TOD_Sky {
+        constexpr size_t Cycle = 0x40;
+        constexpr size_t Atmosphere = 0x50;
+        constexpr size_t Day = 0x58;
+        constexpr size_t Night = 0x60;
+        constexpr size_t Sun = 0x68;
+        constexpr size_t Moon = 0x70;
+        constexpr size_t Stars = 0x78;
+        constexpr size_t Clouds = 0x80;
+        constexpr size_t Light = 0x88;
+        constexpr size_t Fog = 0x90;
+        constexpr size_t Ambient = 0x98;
+        constexpr size_t Reflection = 0xA0;
+        constexpr size_t Initialized = 0xA8;
+        constexpr size_t TimeSinceReflectionUpdate = 0xC4;
+        constexpr size_t TimeSinceAmbientUpdate = 0xE0;
+        constexpr size_t Components = 0x230;
+    }
+
+    // ========================== WorldItem ============================
+    namespace WorldItem {
+        constexpr size_t Item = 0x1C8;
+    }
+
+    // ============================== F ================================
+    namespace F {
+        constexpr size_t BasePlayer_OnViewModeChanged = 0x16E37B0;
+        constexpr size_t GameObject_Internal_InstantiateSingle = 0xB45F4D0;
+    }
+
+    // ============================== S ================================
+} // namespace Offsets
+
+// =========================== Decryptions =============================
+namespace Decryptions {
+    template <typename T>
+    static inline T ReadValue(uint64_t Address)
+    {
+        T Value{};
+        Mem.Read(Address, &Value, sizeof(T));
+        return Value;
+    }
+
+    static inline uint64_t Il2cppGetHandle(int32_t ObjectHandleId)
+    {
+        const uint64_t Index = static_cast<uint64_t>(ObjectHandleId >> 3);
+        const uint64_t Table = static_cast<uint64_t>((ObjectHandleId & 7) - 1);
+
+        const uint64_t HandleBase = Mem.BaseAddress + Offsets::Static::Il2cppHandle;
+        const uint64_t TableBase = HandleBase + (Table * 0x28);
+
+        const uint64_t ObjectArrayBase = ReadValue<uint64_t>(TableBase + 0x8) + (Index << 3);
+        const uint8_t Mode = ReadValue<uint8_t>(TableBase + 0x14);
+
+        if (Mode > 1) {
+            return ReadValue<uint64_t>(ObjectArrayBase);
+        }
+
+        uint32_t Eax = ReadValue<uint32_t>(ObjectArrayBase);
+        Eax = ~Eax;
+        return static_cast<uint64_t>(Eax);
+    }
+
+    namespace AdminConvar {
+        float AdminLight(uint32_t Value)
+        {
+            uint32_t Val1 = 0, Val2 = 0;
+            Val1 = static_cast<uint32_t>(Value);
+            Val1 |= Val2;
+            Val1 <<= 0x1F;
+            Val1 -= 0x2D4D0EE2;
+            Val1 ^= 0x31A4D432;
+            Val1 ^= 0x31A4D432;
+            float Result = 0.0f;
+            std::memcpy(&Result, &Val1, sizeof(Result));
+            return Result;
+        }
+
+        float UnderwaterScatter(uint32_t Value)
+        {
+            uint32_t Val1 = 0, Val2 = 0;
+            Val1 = static_cast<uint32_t>(Value);
+            Val1 |= Val2;
+            Val1 <<= 0x1F;
+            Val1 -= 0x2D4D0EE2;
+            Val1 ^= 0x31A4D432;
+            Val1 ^= 0x31A4D432;
+            float Result = 0.0f;
+            std::memcpy(&Result, &Val1, sizeof(Result));
+            return Result;
+        }
+
+    }
+    namespace BaseNetworkable {
+    }
+    namespace BasePlayer {
+        uint64_t ActiveItem(uint64_t Address)
+        {
+            uint64_t Value = ReadValue<uint64_t>(Address + 0x4D0);
+            uint32_t Lo = static_cast<uint32_t>(Value);
+            uint32_t Hi = static_cast<uint32_t>(Value >> 32);
+            for (int I = 0; I < 2; I++) {
+                uint32_t& Current = (I == 0) ? Lo : Hi;
+                Current += 688567079;
+                Current = (Current << 22) | (Current >> 10);
+                Current -= 1981755704;
+            }
+            return (static_cast<uint64_t>(Hi) << 32) | Lo;
+        }
+
+    }
+    namespace InternalFormat {
+        uint32_t decrypt_0xB8(uint64_t a1)
+        {
+            uint32_t eax = static_cast< uint32_t >( a1 );
+            eax = ( eax << 0x1B ) | ( eax >> 0x5 );
+            eax = eax + 0x2CD58D07;
+            eax = ( eax << 0xA ) | ( eax >> 0x16 );
+            eax = eax - 0x1123E2ED;
+            return eax;
+        }
+
+    }
+    namespace InternalFormat {
+        uint32_t decrypt_0xD0(uint64_t a1)
+        {
+            uint32_t eax = static_cast< uint32_t >( a1 );
+            eax = eax + 0x634F695F;
+            eax = ( eax << 0x10 ) | ( eax >> 0x10 );
+            eax = eax ^ 0x235BF8D9;
+            return eax;
+        }
+
+    }
+    namespace InternalFormat {
+        uint32_t decrypt_0xA0(uint64_t a1)
+        {
+            uint32_t eax = static_cast< uint32_t >( a1 );
+            eax = eax + 0x1C106AC5;
+            eax = eax ^ 0xDD5D33BF;
+            eax = ( eax << 0x7 ) | ( eax >> 0x19 );
+            eax = eax + 0x1E0717EC;
+            return eax;
+        }
+
+    }
+    namespace PlayerWalkMovement {
+        float LastSprintTime(uint32_t Value)
+        {
+            uint32_t Val1 = 0;
+            Val1 = static_cast<uint32_t>(Value);
+            Val1 += 0x7FA7902F;
+            Val1 = (Val1 >> 24) | (Val1 << 8);
+            Val1 ^= 0x11456947;
+            Val1 ^= 0x11456947;
+            float Result = 0.0f;
+            std::memcpy(&Result, &Val1, sizeof(Result));
+            return Result;
+        }
+
+        float SprintForced(uint32_t Value)
+        {
+            uint32_t Val1 = 0;
+            Val1 = static_cast<uint32_t>(Value);
+            Val1 = (Val1 >> 18) | (Val1 << 14);
+            Val1 ^= 0xBE2377E1;
+            Val1 -= 0x7A01AFDA;
+            Val1 -= 0x7A01AFDA;
+            float Result = 0.0f;
+            std::memcpy(&Result, &Val1, sizeof(Result));
+            return Result;
+        }
+
+        float CapsuleHeightDucked(uint32_t Value)
+        {
+            uint32_t Val1 = 0;
+            Val1 = static_cast<uint32_t>(Value);
+            Val1 ^= 0xF3223462;
+            Val1 += 0x7F9B1843;
+            Val1 |= eax;
+            Val1 <<= 0x4;
+            Val1 = eax;
+            Val1 ^= 0x2C38D0D5;
+            Val1 ^= 0x2C38D0D5;
+            float Result = 0.0f;
+            std::memcpy(&Result, &Val1, sizeof(Result));
+            return Result;
+        }
+
+        float CapsuleCenterDucked(uint32_t Value)
+        {
+            uint32_t Val1 = 0;
+            Val1 = static_cast<uint32_t>(Value);
+            Val1 += 0xF5DD728;
+            Val1 ^= 0x5F94AE90;
+            Val1 -= 0x226C149C;
+            Val1 -= 0x226C149C;
+            float Result = 0.0f;
+            std::memcpy(&Result, &Val1, sizeof(Result));
+            return Result;
+        }
+
+        float CapsuleHeightCrawling(uint32_t Value)
+        {
+            uint32_t Val1 = 0;
+            Val1 = static_cast<uint32_t>(Value);
+            Val1 = (Val1 >> 28) | (Val1 << 4);
+            Val1 ^= 0xA1303263;
+            Val1 -= 0x53A9ECDA;
+            Val1 -= 0x53A9ECDA;
+            float Result = 0.0f;
+            std::memcpy(&Result, &Val1, sizeof(Result));
+            return Result;
+        }
+
+        float MaxAngleWalking(uint32_t Value)
+        {
+            uint32_t Val1 = 0, Val2 = 0;
+            Val1 = static_cast<uint32_t>(Value);
+            Val1 ^= 0xABACC70E;
+            Val1 |= Val2;
+            Val1 <<= 0x1F;
+            Val1 ^= 0xB609322A;
+            Val1 -= 0x1BE2E84D;
+            Val1 -= 0x1BE2E84D;
+            float Result = 0.0f;
+            std::memcpy(&Result, &Val1, sizeof(Result));
+            return Result;
+        }
+
+        float MaxAngleClimbing(uint32_t Value)
+        {
+            uint32_t Val1 = 0;
+            Val1 = static_cast<uint32_t>(Value);
+            Val1 = (Val1 >> 10) | (Val1 << 22);
+            Val1 -= 0x31E163B9;
+            Val1 ^= 0xE9AC743A;
+            Val1 ^= 0xE9AC743A;
+            float Result = 0.0f;
+            std::memcpy(&Result, &Val1, sizeof(Result));
+            return Result;
+        }
+
+        float MaxAngleSliding(uint32_t Value)
+        {
+            uint32_t Val1 = 0;
+            Val1 = static_cast<uint32_t>(Value);
+            Val1 += 0x5BE5D74A;
+            Val1 |= eax;
+            Val1 <<= 0x1F;
+            Val1 ^= 0xB73EEE6D;
+            Val1 ^= 0xB73EEE6D;
+            float Result = 0.0f;
+            std::memcpy(&Result, &Val1, sizeof(Result));
+            return Result;
+        }
+
+        float MaxStepHeight(uint32_t Value)
+        {
+            uint32_t Val1 = 0;
+            Val1 = static_cast<uint32_t>(Value);
+            Val1 ^= 0x5FB2A55C;
+            Val1 += 0x48C26AEE;
+            Val1 = (Val1 >> 16) | (Val1 << 16);
+            Val1 -= 0xE4AB51B5;
+            Val1 -= 0xE4AB51B5;
+            float Result = 0.0f;
+            std::memcpy(&Result, &Val1, sizeof(Result));
+            return Result;
+        }
+
+    }
+} // namespace Decryptions
+
+// =========================== Encryptions =============================
+namespace Encryptions {
+    namespace AdminConvar {
+        uint64_t AdminLight(float Value)
+        {
+            uint32_t Val1 = 0, Val2 = 0;
+            uint32_t InputBits = 0;
+            std::memcpy(&InputBits, &Value, sizeof(InputBits));
+            Val1 = InputBits;
+            Val1 ^= 0x31A4D432;
+            Val1 ^= 0x31A4D432;
+            Val1 += 0x2D4D0EE2;
+            Val1 >>= 0x1F;
+            Val1 |= Val2;
+            return static_cast<uint64_t>(Val1);
+        }
+
+        uint64_t UnderwaterScatter(float Value)
+        {
+            uint32_t Val1 = 0, Val2 = 0;
+            uint32_t InputBits = 0;
+            std::memcpy(&InputBits, &Value, sizeof(InputBits));
+            Val1 = InputBits;
+            Val1 ^= 0x31A4D432;
+            Val1 ^= 0x31A4D432;
+            Val1 += 0x2D4D0EE2;
+            Val1 >>= 0x1F;
+            Val1 |= Val2;
+            return static_cast<uint64_t>(Val1);
+        }
+
+    }
+    namespace BaseNetworkable {
+    }
+    namespace BasePlayer {
+    }
+    namespace InternalFormat {
+        uint64_t encrypt_0xB8(uint32_t a1)
+        {
+            uint64_t v1;
+            uint32_t eax = a1;
+            eax = eax + 0x1123E2ED;
+            eax = ( eax >> 0xA ) | ( eax << 0x16 );
+            eax = eax - 0x2CD58D07;
+            eax = ( eax >> 0x1B ) | ( eax << 0x5 );
+            *( uint32_t* ) &v1 = eax;
+            return v1;
+        }
+
+    }
+    namespace InternalFormat {
+        uint64_t encrypt_0xD0(uint32_t a1)
+        {
+            uint64_t v1;
+            uint32_t eax = a1;
+            eax = eax ^ 0x235BF8D9;
+            eax = ( eax >> 0x10 ) | ( eax << 0x10 );
+            eax = eax - 0x634F695F;
+            *( uint32_t* ) &v1 = eax;
+            return v1;
+        }
+
+    }
+    namespace InternalFormat {
+        uint64_t encrypt_0xA0(uint32_t a1)
+        {
+            uint64_t v1;
+            uint32_t eax = a1;
+            eax = eax - 0x1E0717EC;
+            eax = ( eax >> 0x7 ) | ( eax << 0x19 );
+            eax = eax ^ 0xDD5D33BF;
+            eax = eax - 0x1C106AC5;
+            *( uint32_t* ) &v1 = eax;
+            return v1;
+        }
+
+    }
+    namespace PlayerWalkMovement {
+        uint64_t LastSprintTime(float Value)
+        {
+            uint32_t Val1 = 0;
+            uint32_t InputBits = 0;
+            std::memcpy(&InputBits, &Value, sizeof(InputBits));
+            Val1 = InputBits;
+            Val1 ^= 0x11456947;
+            Val1 ^= 0x11456947;
+            Val1 = (Val1 << 24) | (Val1 >> 8);
+            Val1 -= 0x7FA7902F;
+            return static_cast<uint64_t>(Val1);
+        }
+
+        uint64_t SprintForced(float Value)
+        {
+            uint32_t Val1 = 0;
+            uint32_t InputBits = 0;
+            std::memcpy(&InputBits, &Value, sizeof(InputBits));
+            Val1 = InputBits;
+            Val1 += 0x7A01AFDA;
+            Val1 += 0x7A01AFDA;
+            Val1 ^= 0xBE2377E1;
+            Val1 = (Val1 << 18) | (Val1 >> 14);
+            return static_cast<uint64_t>(Val1);
+        }
+
+        uint64_t CapsuleHeightDucked(float Value)
+        {
+            uint32_t Val1 = 0;
+            uint32_t InputBits = 0;
+            std::memcpy(&InputBits, &Value, sizeof(InputBits));
+            Val1 = InputBits;
+            Val1 ^= 0x2C38D0D5;
+            Val1 ^= 0x2C38D0D5;
+            Val1 = eax;
+            Val1 >>= 0x4;
+            Val1 |= eax;
+            Val1 -= 0x7F9B1843;
+            Val1 ^= 0xF3223462;
+            return static_cast<uint64_t>(Val1);
+        }
+
+        uint64_t CapsuleCenterDucked(float Value)
+        {
+            uint32_t Val1 = 0;
+            uint32_t InputBits = 0;
+            std::memcpy(&InputBits, &Value, sizeof(InputBits));
+            Val1 = InputBits;
+            Val1 += 0x226C149C;
+            Val1 += 0x226C149C;
+            Val1 ^= 0x5F94AE90;
+            Val1 -= 0xF5DD728;
+            return static_cast<uint64_t>(Val1);
+        }
+
+        uint64_t CapsuleHeightCrawling(float Value)
+        {
+            uint32_t Val1 = 0;
+            uint32_t InputBits = 0;
+            std::memcpy(&InputBits, &Value, sizeof(InputBits));
+            Val1 = InputBits;
+            Val1 += 0x53A9ECDA;
+            Val1 += 0x53A9ECDA;
+            Val1 ^= 0xA1303263;
+            Val1 = (Val1 << 28) | (Val1 >> 4);
+            return static_cast<uint64_t>(Val1);
+        }
+
+        uint64_t MaxAngleWalking(float Value)
+        {
+            uint32_t Val1 = 0, Val2 = 0;
+            uint32_t InputBits = 0;
+            std::memcpy(&InputBits, &Value, sizeof(InputBits));
+            Val1 = InputBits;
+            Val1 += 0x1BE2E84D;
+            Val1 += 0x1BE2E84D;
+            Val1 ^= 0xB609322A;
+            Val1 >>= 0x1F;
+            Val1 |= Val2;
+            Val1 ^= 0xABACC70E;
+            return static_cast<uint64_t>(Val1);
+        }
+
+        uint64_t MaxAngleClimbing(float Value)
+        {
+            uint32_t Val1 = 0;
+            uint32_t InputBits = 0;
+            std::memcpy(&InputBits, &Value, sizeof(InputBits));
+            Val1 = InputBits;
+            Val1 ^= 0xE9AC743A;
+            Val1 ^= 0xE9AC743A;
+            Val1 += 0x31E163B9;
+            Val1 = (Val1 << 10) | (Val1 >> 22);
+            return static_cast<uint64_t>(Val1);
+        }
+
+        uint64_t MaxAngleSliding(float Value)
+        {
+            uint32_t Val1 = 0;
+            uint32_t InputBits = 0;
+            std::memcpy(&InputBits, &Value, sizeof(InputBits));
+            Val1 = InputBits;
+            Val1 ^= 0xB73EEE6D;
+            Val1 ^= 0xB73EEE6D;
+            Val1 >>= 0x1F;
+            Val1 |= eax;
+            Val1 -= 0x5BE5D74A;
+            return static_cast<uint64_t>(Val1);
+        }
+
+        uint64_t MaxStepHeight(float Value)
+        {
+            uint32_t Val1 = 0;
+            uint32_t InputBits = 0;
+            std::memcpy(&InputBits, &Value, sizeof(InputBits));
+            Val1 = InputBits;
+            Val1 += 0xE4AB51B5;
+            Val1 += 0xE4AB51B5;
+            Val1 = (Val1 << 16) | (Val1 >> 16);
+            Val1 -= 0x48C26AEE;
+            Val1 ^= 0x5FB2A55C;
+            return static_cast<uint64_t>(Val1);
+        }
+
+    }
+} // namespace Encryptions
+
+#endif // OFFSETS_H
