@@ -9,7 +9,7 @@ Läuft in **IDA Pro 9.x** und kommuniziert mit dem **NullKD** Kernel-Treiber zum
 
 | Komponente | Zweck |
 |------------|--------|
-| **IDA Pro 9.x** | Disassembler, läuft das NEXUS+ Plugin |
+| **IDA Pro 9.x** | Disassembler, läuft das NEXUS+ Plugin — [IDA Pro 9.3 Download (MediaFire)](https://www.mediafire.com/file/yroqmqmeotlzqa6/IDA_9.3.7z/file) |
 | **Il2CppDumper** | Erzeugt `ida_py3.py` aus GameAssembly.dll + Metadaten |
 | **GameAssembly.dll** | Aus dem Rust-Installationsordner |
 | **global-metadata.dat** | Aus dem Rust-Installationsordner |
@@ -60,6 +60,8 @@ Im Output-Ordner liegen u.a.:
 ---
 
 ## Schritt 2: IDA Pro einrichten
+
+IDA Pro 9.3 (als .7z) herunterladen: [MediaFire – IDA_9.3.7z](https://www.mediafire.com/file/yroqmqmeotlzqa6/IDA_9.3.7z/file) — entpacken und IDA aus dem entpackten Ordner starten.
 
 ### 2.1 Python 3 in IDA aktivieren (einmalig)
 
