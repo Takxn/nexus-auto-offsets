@@ -1,4 +1,10 @@
-# NEXUS+ AUTO-OFFSET GENERATOR v3.1
+<p align="center">
+  <img src="logo.png" alt="Nexus+" width="120">
+</p>
+
+<p align="center">
+  <b>NEXUS+ AUTO-OFFSET GENERATOR v3.1</b>
+</p>
 
 Vollautomatische Offsets.h-Generierung für Rust (IL2CPP) + integrierter Offset-Tester.  
 Läuft in **IDA Pro 9.x** und kommuniziert mit dem **NullKD** Kernel-Treiber zum Live-Testen.
