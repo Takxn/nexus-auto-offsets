@@ -1,3 +1,11 @@
+<div align="center">
+
+<br>
+
+<img src="logo.png" width="160" alt="Nexus+">
+
+<br><br>
+
 # NEXUS+ AUTO-OFFSET GENERATOR v3.1
 
 Vollautomatische Offsets.h-Generierung für Rust (IL2CPP) + integrierter Offset-Tester.  
